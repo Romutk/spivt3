@@ -1,7 +1,9 @@
 #/bin/bash
+yum -y install policycoreutils-python
 
 useradd webmaster
 passwd webmaster
+
 
 
 semanage login -a -s staff_u  webmaster 
